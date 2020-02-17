@@ -1,5 +1,5 @@
 import React from "react";
-
+import {connect} from "react-redux";
 class App extends React.Component{
     render(){
       console.log(this.props);  
@@ -11,4 +11,4 @@ class App extends React.Component{
     }
  }
 
- export default App;
+ export default connect(null,null)(App);
