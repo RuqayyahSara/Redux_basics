@@ -10,5 +10,9 @@ class App extends React.Component{
     )
     }
  }
-
- export default connect(null,null)(App);
+const mapStateToProps =(state)=>{
+    return{
+        data: "Ruqayyah"
+    }
+}
+ export default connect(mapStateToProps)(App);
